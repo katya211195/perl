@@ -1,0 +1,1 @@
+cat w | perl -e 'while (<>) {@F = split(/;/,$_,9); join(" ",@F); $count{$ARGV}++; if (@F[4]>1000000) {print @F[8];$c{$ARGV}++;foreach $. (%c) {print "$c{$.} "} }};foreach $. (%count) {print "$count{$.}\n"}'
