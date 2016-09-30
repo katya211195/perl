@@ -1,0 +1,3 @@
+
+
+cat w | perl -e 'while (<>) {@F = split(/;/,$_,9); if (@F[4]>1048576) {print @F[8]; $co{$c}++}}; print "lines: $. ; good lines: $co{$c}\n"'

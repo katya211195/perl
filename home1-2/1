@@ -1,0 +1,3 @@
+ls -l | perl -lne '@F = split(/\s+/,$_,9); print join(";",@F)' | tee w
+
+
